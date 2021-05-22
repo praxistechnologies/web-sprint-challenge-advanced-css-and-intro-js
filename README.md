@@ -31,7 +31,7 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 ## Instructions
 
-### Task 1: Project Set-Up
+### Task 1: Project Set-Up - DONE
 
 Follow these steps to set up your project:
 
