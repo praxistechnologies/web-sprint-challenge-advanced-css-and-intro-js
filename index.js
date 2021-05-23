@@ -220,7 +220,7 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
 
 let str = 'Vincent Van Dough';
 let newstr = str.replace(/Dough/i, 'Gogh');
-console.log(newstr);  // Vincent Van Gogh
+console.log(newstr);  
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
@@ -231,6 +231,13 @@ console.log(newstr);  // Vincent Van Gogh
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
+function getArtistByIndex(artists, index) { 
+  let name = artists[index].name ;
+  return `the artist at index ${index} is ${name}`;
+ }  
+ 
+ let third_answer = getArtistByIndex(artists, 0);
+ console.log("third answer: ", third_answer);
 
 
 
@@ -243,8 +250,19 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 
+function get20s(artists){
+  let new_array = []  
+  artists.map((item) => {    
+    let res = item.years.split(" - ")
+    if(res[0] >= 1900 && res[1] <= 2000) {
+      new_array.push(item.name)
+    }
+  })
+  return new_array
+}
 
-
+let forth_answer = get20s(artists)
+console.log("forth answer: ", forth_answer)
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
  Use removeArtist to do the following:
@@ -255,6 +273,9 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
+ function removeArtist(/*Your Code Here*/){
+  /*Your Code Here*/
+}
    
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -273,6 +294,9 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
+function addArtist(/*Your Code Here*/){
+  /*Your Code Here*/
+}
 
   
 
@@ -282,6 +306,11 @@ Use lotsOfArt to do the following:
 2. Return an array with names of artists in the received array who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
+
+function lotsOfArt(/*Your Code Here*/){
+  /*Your Code Here*/
+}
+
 
 
 
