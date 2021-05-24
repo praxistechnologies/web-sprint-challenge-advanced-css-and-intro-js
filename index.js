@@ -327,11 +327,16 @@ Use lotsOfArt to do the following:
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
 function lotsOfArt(artists) {
-  let artists = artists.filter(function (e) {}
-    return e.artists.paintings > 100;
-  });
+  let new_arry = [];
+  artists.map((item) => {
+    if(item.paintings > 100) {
+      new_arry.push(item.name);
+    }
+  })
+  return new_arry
+}
 
-lotsOfArt(artists)
+lotsOfArt(artists);
 
 
 
