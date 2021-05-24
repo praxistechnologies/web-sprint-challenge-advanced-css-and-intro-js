@@ -23,9 +23,17 @@ Commit your code regularly and meaningfully.
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
+Acessibility is an inclusive practice that relates to the semantic structure of a website meaning that attributes like <header> <nav> <h1> <button> and the like mean something definitive to the viewer of the webpage who has disabilities as those attributes give people with disabilities the ability to understand, navigate and interact with the website. 
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+Accessible websites offer a useable experience through Universal Design Theory and development strategies like the use Responsive Units of Measurement, Screen Reader compatibility through Semantic HTML Structure, and through choice of the Color of text and buttons so as those with color blindness can better decipher buttons and text to navigate the page. Responsive Units of Measurement are scalable units based on REM, EM and % definitions of text which can be changed by the resolution of the browser dimension. Screen Readers use Semantic Tags like <header>, <main>, <nav>, <button>, and <article> to assist those with disabilities to understand and navigate a web page. Color choice assists those with colorblindness so, when say an error occurs in a form submission, a visual component accompanies the error like an "X" in an input field showing where some user input has not been accepted in the form field and for the viewer to more easily understand what is needed to complete said form.
+
 3. How would you explain the concept of a variable to someone new to programming?
+Variables in JavaScript mean anything that can vary. A variable is a way to store, change and use data in code. A variable must have a unique name. Variables can be assigned using an "=" operator. Variables can be expressed through three different keywords, "var", "let", and "const". Variables work with Strings in such a fashion: "const dogName = 'fido"; const dogAge = "2". JavaScript uses Strings like the above, Numbers, and Booleans of true or false. JavaScript uses loosely-typed variables meaning that they do not require a data type to be declared and one can assign any type of literal values to a variable like a String, Integer, or Boolean. Undefined is returned when a Variable does not have a value. Null is returned when a developer has set its value to Null. Null and Undefined are not considered Strings and are written without quotes like a Boolean. 
+
 4. What is the purpose of using functions in code?
+Functions are code that accomplish a specific task. Functions take in data, process it and return a result. Functions can be used repeatedly and are meant to used that way ideally which makes your code "DRY". Functions acan also be called inside other functions creating sub-steps. Functions also allow for the ability to test parts of a larger program in isolation from the larger scope of the project which can expedite testing and growth.    
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -43,7 +51,7 @@ NOTE: Tests will run for the JavaScript portion of this challenge only
 5. next type `npm run test:watch` in your terminal
 6. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit
 
-### Task 2a:  Minimum Viable Product - Responsive Design
+### Task 2a:  Minimum Viable Product - Responsive Design - DONE
 
 *Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. During this time, [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css).*
 
